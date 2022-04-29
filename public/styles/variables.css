@@ -1,0 +1,9 @@
+/*
+Define all the colors used
+*/
+
+:root {
+  --background-gray: rgba(238, 238, 238, 1);
+  --app-red: rgba(255, 53, 53, 1);
+  --border-gray: rgba(170,170,170, 1);
+}

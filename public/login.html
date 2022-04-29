@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/login_styles.css" />
+    <title>Login</title>
+    <script type="module" src="./scripts/login.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>LOGIN</h2>
+      <input
+        type="text"
+        placeholder="Username"
+        name="user-name"
+        class="username-input"
+        maxlength="25"
+        autocomplete="off"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        name="user-name"
+        class="password-input"
+      />
+      <button type="submit" class="login">LOGIN</button>
+      <p class="error">Please check the username and password</p>
+      <button type="button" class="signup">Sign Up</button>
+      <p>Press Sign Up if you are first time user</p>
+    </div>
+
+    <div class="signup-box">
+      <div class="signup-form">
+        <img
+          src="./assets/icons/x-solid.svg"
+          alt="Close Window"
+          class="close"
+          title="Close Window"
+        />
+        <h2>SIGN UP</h2>
+        <input
+          type="text"
+          placeholder="Username"
+          name="user-name"
+          class="username-input"
+          maxlength="25"
+          autocomplete="off"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          name="user-name"
+          class="password-input"
+        />
+        <button type="submit" class="signup register">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>

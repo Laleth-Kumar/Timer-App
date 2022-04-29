@@ -1,0 +1,148 @@
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  width: 350px;
+  height: 100vh;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 1px 0 10px;
+}
+
+.sidebar .account-details {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 75px;
+  border-bottom: 2px solid var(--border-gray);
+}
+
+.sidebar .username {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar .create-task {
+  height: 150px;
+  border-bottom: 2px solid var(--border-gray);
+  display: grid;
+  grid-template-areas:
+    "input input"
+    "start schedule";
+}
+
+.sidebar .create-task .task-input {
+  grid-area: input;
+  align-self: center;
+  justify-self: center;
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px var(--border-gray);
+  background-color: var(--background-gray);
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+.sidebar .create-task .start-task {
+  grid-area: start;
+}
+
+.sidebar .create-task .schedule-task {
+  grid-area: schedule;
+}
+
+.sidebar .create-task button {
+  align-self: center;
+  justify-self: center;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--app-red);
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+  box-shadow: 4px 4px 4px var(--border-gray);
+}
+
+
+.sidebar .task {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .task p {
+  width: 70px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.heading {
+  position: sticky;
+  top: 0px;
+  left: -20px;
+  width: 320px;
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.sidebar .current-tasks {
+  position: relative;
+  min-height: 150px;
+  max-height: 250px;
+  height: fit-content;
+  padding-bottom: 50px;
+  border-bottom: 2px solid var(--border-gray);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: start;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.sidebar .scheduled-tasks {
+  min-height: 150px;
+  max-height: 250px;
+  height: fit-content;
+  padding-bottom: 50px;
+  border-bottom: 2px solid var(--border-gray);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: start;
+  align-items:flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.scheduled-tasks .task{
+    margin-left: 20px;
+}
+
+.scheduled-tasks .task p{
+    width: 250px;
+}
+
+.button{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+  .sidebar{
+    visibility: hidden;
+  }
+}

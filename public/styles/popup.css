@@ -1,0 +1,119 @@
+.popup-box {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-box .card {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 50%;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 20px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.popup-box .card .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-box .card .close {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.popup-box .card h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.popup-box .card p {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.popup-box .card .log-details {
+  display: flex;
+  column-gap: 50px;
+}
+
+.popup-box .card .log-details p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.popup-box .card .time-spent{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.popup-box .card .edit-options{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-box .card .edit-options button{
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    background-color: white;
+}
+
+.popup-box .card .edit-options input{
+    width: 80px;
+    font-size: 15px;
+    font-weight: 300;
+    border: none;
+    background-color: var(--border-gray);
+    padding: 5px;
+}
+
+.popup-box .card .edit-options img{
+    cursor: pointer;
+}
+
+.popup-box .card .edit-options .start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box .card .edit-options .edit-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.popup-box .card .edit-options .delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

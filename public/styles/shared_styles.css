@@ -1,0 +1,24 @@
+/*Set font family to all the tags*/
+
+body {
+  background-color: var(--background-gray);
+  width: 100%;
+}
+
+p,
+h2,
+label,
+select,
+span,
+input,
+option * {
+  font-family: "Roboto";
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active{
+  transform: translateY(2px);
+}

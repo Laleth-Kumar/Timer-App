@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/index_styles.css" />
+    <script type="module" src="./scripts/main.js"></script>
+    <title>Timer App</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="account-details">
+        <p class="username">USER NAME</p>
+      </div>
+
+      <div class="create-task">
+        <input
+          type="text"
+          placeholder="Task"
+          name="task-name"
+          class="task-input"
+          autocomplete="off"
+        />
+        <button type="button" class="start-task">START</button>
+        <button type="button" class="schedule-task">SCHEDULE</button>
+      </div>
+
+      <div class="current-tasks">
+        <p class="heading">Current Tasks</p>
+      </div>
+
+      <div class="scheduled-tasks">
+        <p class="heading">Scheduled Tasks</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <img
+        src="./assets/icons/arrow-right-drop-circle.svg"
+        alt="Open Sidebar"
+        title="open Sidebar"
+        class="sidebar-button"
+      />
+      <img 
+        src="./assets/icons/arrow-left-drop-circle.svg" 
+        alt="Close Sidebar" 
+        title="Close Sidebar" 
+        class="close-sidebar"
+      />
+      <div class="file-buttons">
+        <input type="file" class="file" accept=".csv">
+        <div class="import">
+          <button type="button">Import Time Log</button>
+          <img
+            src="./assets/icons/file-upload.svg"
+            alt="Import time log"
+            title="Import Time Log"
+          />
+        </div>
+        <div class="export">
+          <button type="button" >Export Time Log</button>
+          <img
+            src="./assets/icons/file-download.svg"
+            alt="Export time log"
+            title="Export Time Log"
+          />
+        </div>
+      </div>
+
+      <div class="time-log">
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-box">
+      <div class="card">
+        <div class="top">
+          <h2>Task Name</h2>
+          <img
+            src="./assets/icons/x-solid.svg"
+            alt="Close Window"
+            class="close"
+            title="close"
+          />
+        </div>
+        <p>
+          <span class="date">20</span> /
+          <span class="month">02</span> /
+          <span class="year">2022</span>
+        </p>
+        <div class="log-details">
+          <p>
+            Start Time: <span class="start-time"></span>
+          </p>
+          <p>
+            End Time: <span class="end-time"></span>
+          </p>
+        </div>
+        <p>
+          Time Spent:
+          <span class="time-spent">2:00</span>
+        </p>
+
+        <div class="edit-options">
+          <div class="start" title="Start Timer">
+            <img src="./assets/icons/camera-timer.svg" alt="start timer" />
+            <button>Start Timer</button>
+          </div>
+          <div class="edit-time">
+            <img src="./assets/icons/minus.svg" alt="Take" class= "take-time" title="Take time" />
+            <input list="time" name="time" placeholder="0" autocomplete="off" />
+            <datalist id="time">
+              <option value="15 mins"></option>
+              <option value="30 mins"></option>
+              <option value="1 hr"></option>
+            </datalist>
+            <img src="./assets/icons/plus.svg" alt="Add" class= "add-time" title="Add time" />
+          </div>
+          <div class="delete" title="Delete Log">
+            <img src="./assets/icons/delete.svg" alt="Delete" />
+            <button>Delete Log</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

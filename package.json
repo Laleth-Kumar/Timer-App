@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "laleth_webtips_sdlc",
+  "version": "1.0.0",
+  "description": "Timer App",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://Laleth_I_N@bitbucket.org/laleth_i_n/laleth_webtips_sdlc.git"
+  },
+  "author": "Laleth Indirani Nehrukumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/laleth_i_n/laleth_webtips_sdlc/issues"
+  },
+  "homepage": "https://bitbucket.org/laleth_i_n/laleth_webtips_sdlc#readme"
+}
